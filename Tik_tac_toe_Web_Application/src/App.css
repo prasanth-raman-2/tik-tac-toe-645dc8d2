@@ -93,6 +93,26 @@
   }
 }
 
+/* Tic Tac Toe Specific Styles */
+.tictactoe-square {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.tictactoe-square:focus {
+  outline: 2px solid var(--text-secondary);
+}
+
+.tictactoe-square:active {
+  filter: brightness(0.95);
+}
+
+.App-description {
+  color: var(--text-secondary);
+}
+
 /* Responsive design for mobile */
 @media (max-width: 768px) {
   .theme-toggle {
